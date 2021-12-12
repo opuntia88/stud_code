@@ -32,4 +32,4 @@ print("the answer is",(num_a+num_b)*num_c)#따로 더한값을 정의하지않�
 firP=int(input("enter the number of slices of pizza at first:"))
 eatP=int(input("enter the number of slices of pizza you ate: "))
 leftP=firP-eatP
-print("⍙\r"*leftP)
+print("⍙\n"*leftP)

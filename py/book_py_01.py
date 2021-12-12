@@ -15,9 +15,11 @@ print(jack) #12를 3으로 나누어 남은 몫을 프린트
 print("what is your age?") # 너의 나이는 얼마고
 textvalue = int(input("enter the age /10: ")) #내 나이의 일의 자리 숫자 입력
 numvalue = int(input("enter the number//10 : ")) #내 나이의 십의 자리 숫자 입력 
-jack = (numvalue*10)+textvalue #내 나이 계산
-print("my age is", jack) #한걸 출력
+jack = (numvalue*10)+textvalue
+print("my age is", jack)
 
+#원하는 폴더를 들어가기: cd + tab
+#폴더에서 빠져나오기: cd..
 
 
 
