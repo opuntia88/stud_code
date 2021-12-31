@@ -1,3 +1,5 @@
+import list
+
 #01. 사용자의 이름을 입력받아서 다음과 같이 출력하라: hello [이름]
 maname = input("enter your name") #입력된 e.y.n에 나의 이름을 입력한 변수를 저장한 뒤
 print("hello", maname) #hello 뒤에 이름으로 저장된 변수를 출력
@@ -33,3 +35,19 @@ firP=int(input("enter the number of slices of pizza at first:"))
 eatP=int(input("enter the number of slices of pizza you ate: "))
 leftP=firP-eatP
 print("⍙\n"*leftP)
+
+#07. 사용자로 부터 이름과 나이를 입력받아 다음과 같이 출략하시오: [이름] next birthday, you will be [나이]
+a, b =input("enter your name and age(seperate to ,):").split(",") #원하는 값을 
+nm=str(a)
+bt=int(b)+1
+print("%s! next birthday, you will be %d-year-old" %(nm, bt)) #같은 형식의 값을 출력하기위해서 다음과 같이 괄호로 묶는다
+
+#08. 계산서의 총 가격과 몇명이 같이 식사했는지 입력받는다. 총 가격을 인원수로 나누고 사람씩 얼마를 내야하는지 출력하라
+cost=[]  #cost를 리스트로 지정 
+a = input("how much is the each prices of menu(seperate" ")").split()
+b=int(a)
+peop= input("how many does the number of people ate with you? (include you) ")
+#for i in range(b):
+    #al=sum
+print("the number of guest: " %peop)
+print("\nthe price to pay for food: " %sum(b))
