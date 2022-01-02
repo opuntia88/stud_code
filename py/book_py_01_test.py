@@ -1,4 +1,4 @@
-import list
+#import list
 
 #01. 사용자의 이름을 입력받아서 다음과 같이 출력하라: hello [이름]
 maname = input("enter your name") #입력된 e.y.n에 나의 이름을 입력한 변수를 저장한 뒤
@@ -51,3 +51,10 @@ peop= input("how many does the number of people ate with you? (include you) ")
     #al=sum
 print("the number of guest: " %peop)
 print("\nthe price to pay for food: " %sum(b))
+
+#09. 사용자로부터 입력받은 시간이 각 단위별로 값이 얼마인지 환산하기
+nw=input(" 원하는 값의 숫자를 입력하시오: ")
+ti=int(nw)
+mn=ti*60
+sc=mn*60
+print( "%d는 %d분과%d분과 같은 시간입니다" %(ti,mn,sc))
