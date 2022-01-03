@@ -58,3 +58,15 @@ ti=int(nw)
 mn=ti*60
 sc=mn*60
 print( "%d는 %d분과%d분과 같은 시간입니다" %(ti,mn,sc))
+
+#10 몸무게를 입력받아서 파운드로 출력
+gram=input("what much do you weigh?: ")
+pound=int(gram)
+pound=pound*2.204
+print("%d pound"%pound)
+
+#11 사용자로부터 100이 넘는 숫자와 10미만의 자연수를 입력받아 나눗셈의 몫을 사용자 친화적으로 표현하라
+bigN=input("enter the number over 100: ")
+smallN=input("enter thr small number under 10: ")
+result=bigN//smallN
+print("%dis %dtimes as big as %d "%(bigN,result,smallN))
