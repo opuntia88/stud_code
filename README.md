@@ -1,1 +1,1 @@
-# stud_code
+#if문
