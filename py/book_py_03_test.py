@@ -29,3 +29,8 @@ elif n1<n2:
 else:
     n4=n2, n3=n1
 print(sn[n3:n4])
+
+#24
+w1=input("enter any word")
+wo1=w1.lower()
+print(wo1)
