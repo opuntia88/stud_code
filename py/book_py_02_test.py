@@ -65,7 +65,7 @@ else:
     print("Too low~")
 
 #19.1,2,3 셋중에서 입력시, 각자 thank you/well done/correct를 입력하고 그외의 값은 error message를 출력
-ans=int(input("enter the number between 1 to 3"))
+ans=int(input("enter the number between 1 to 3:"))
 if ans == 1:
     print("Thank you!")
 elif ans == 2:
