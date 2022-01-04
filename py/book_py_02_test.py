@@ -43,3 +43,35 @@ if an1 =="yes":#비가 올경우
         print("Take an umbrella")
 else:
     print("Have a good day!")
+
+#17.나이별로 해당되는 값을 출력하시오
+age=int(input("how old are you?:"))
+if age>17:
+    print("You can vote!")
+elif age==17:
+    print("You can learn to drive car.")
+elif age==16:
+    print("You can buy a lottery ticket.")
+else:
+    print("You can go Trick-or-Treating.")
+
+#18.사용자에게 숫자를 입력받아, 10미만일경우/10-20일경우/그렇지않다면에대해 답하는 프로그램을 만드시오.
+num5=int(input("enter the number:"))
+if num5>20:
+    print("Too high~.")
+elif num5<=20 and num5>=10:
+    print("correct!")
+else:
+    print("Too low~")
+
+#19.1,2,3 셋중에서 입력시, 각자 thank you/well done/correct를 입력하고 그외의 값은 error message를 출력
+ans=int(input("enter the number between 1 to 3"))
+if ans == 1:
+    print("Thank you!")
+elif ans == 2:
+    print("Well done!")
+elif ans == 3:
+    print("Correct!")
+else:
+    print("Error message!")
+
