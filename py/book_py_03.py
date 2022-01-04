@@ -7,26 +7,26 @@ inp1=input("enter the word:")
 in1=int(len(inp1)) # 입력받은 이름의 변수의 길이를 찾는다.
 print(in1)
 
-inp2=input("enter the any word(could mix upper and lower word)")
-inp2.upper()#입력받은 문자를 대문자화시킬것
-print(inp2)
+inp2=input("enter the any word(could mix upper and lower word):")
+in2=inp2.upper()#입력받은 문자를 대문자화시킬것
+print(in2)
 
 inp3=input("enter the word:")
 print(inp3.capitalize()) #입력받은 문자의 첫글자만 대문자로 바꾸고 나머지는 소문자.
 
 inp4=input("enter the word:")
-inp3.lower() #입력받은 문자를 소문자화 한다
-print(inp3)
+in4=inp4.lower() #입력받은 문자를 소문자화 한다
+print(in4)
 
-inp5, inp6=input("enter the first name, last name(seperate",")").split(",")
+inp5, inp6=input("enter the first name, last name(seperate):").split()
 name=inp5+inp6 #입력받은 이름과 성을 결합한다.
 print(name)
 
 inp7=input("enter the some words:")
-inp7.title()#입력받은 모든 문자의 첫자를 대문자로 바꾸고 나머지를 소문자로 한다
-print(inp7)
+in7=inp7.title()#입력받은 모든 문자의 첫자를 대문자로 바꾸고 나머지를 소문자로 한다
+print(in7)
 
-inp8="Your name is Jack"
-print(inp8.strip(""))#문자열의 시작과 끝에 있는 문자(또는 공백)을 제거한다.
+inp8=input("enter the sentence:")
+print(inp8.strip(' ff'))#문자열의 시작과 끝에 있는 문자(또는 공백)을 제거한다.
 
 print("paoapa sopa dupa"[5:11])
