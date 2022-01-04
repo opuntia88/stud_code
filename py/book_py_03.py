@@ -27,9 +27,9 @@ in7=inp7.title()#입력받은 모든 문자의 첫자를 대문자로 바꾸고 
 print(in7)
 
 inp8=input("enter the sentence:")
-print(inp8.strip(' ff'))#문자열의 시작과 끝에 있는 문자(또는 공백)을 제거한다.
+print(inp8.strip())#문자열의 시작과 끝에 있는 문자(또는 공백)을 제거한다.
 
-print("paoapa sopa dupa"[5:11])
+print("paoapa sopa dupa"[5:11])#각 문자로 리스트로 만들어 5~11번째 단어를 출력
 
 #failed to push some refs to 'https://github.com/opuntia88/stud_code.git'
 #에러발생: git push -f origin//강제로 진행한다는 것이라
