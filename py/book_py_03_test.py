@@ -46,12 +46,21 @@ print(wo1)
 #    5자 이상이면 소문자로 출력하시오.
 
 fn1=input("enter the firstname!:")
+fn1.lower()
 Fm=len(fn1)
 if Fm<5:
     ln1=input("enter your lastname:")
     nm1=(fn+ln1).upper()
     print(nm1)
 else:
-    print(fn1.lower())
+    print(fn1)
 
 
+#26. 피그라틴_소문자로 출력하는 프로그램
+wd1=input("enter the any word:")
+if wd1[0]=='a'or'e'or'i'or'o'or'w'or'u'or'y':
+    wd2=wd1+'way'
+    print(wd2.lower())
+else:
+    wd2=w1+'ay'
+    print(wd2.lower())
