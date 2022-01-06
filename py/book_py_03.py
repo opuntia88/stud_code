@@ -31,6 +31,6 @@ print(inp8.strip())#문자열의 시작과 끝에 있는 문자(또는 공백)�
 
 print("paoapa sopa dupa"[5:11])#각 문자로 리스트로 만들어 5~11번째 단어를 출력
 
-#failed to push some refs to 'https://github.com/opuntia88/stud_code.git'
+# ► failed to push some refs to 'https://github.com/opuntia88/stud_code.git'
 #에러발생: git push -f origin//강제로 진행한다는 것이라
 #가장 좋은건 pull->merge->push하는 것.
