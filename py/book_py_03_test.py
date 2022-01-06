@@ -50,7 +50,7 @@ fn1.lower()
 Fm=len(fn1)
 if Fm<5:
     ln1=input("enter your lastname:")
-    nm1=(fn+ln1).upper()
+    nm1=(fn1+ln1).upper()
     print(nm1)
 else:
     print(fn1)
