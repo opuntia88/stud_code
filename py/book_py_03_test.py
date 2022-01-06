@@ -21,16 +21,24 @@ print(L1+" "+F1)
 sn=input("enter the part of sleeping song:")
 snum=len(sn)-1
 print(snum)
-n1, n2=int(input("enter the two numbers between 0 to %d :", snum))
+n1, n2=input("enter the two numbers between 0 to %d :" %snum).split()
+n1=int(n1)
+n2=int(n2)
+# n3, n4=0  ▶︎ TypeError: cannot unpack non-iterable int object: 개별적으로 기본값 정의로 해결
+n3=n4=0
 if n1>n2:
-    n4=n1,n3=n2
+    n4=n1
+    n3=n2
 elif n1<n2:
-    n4=n2,n3=n1
+    n4=n2
+    n3=n1
 else:
-    n4=n2, n3=n1
+    n4=n2
+    n3=n1
 print(sn[n3:n4])
 
-#24
-w1=input("enter any word")
+#24.아무문자나 입력받아 소문자로 바꾸기
+w1=input("enter any word:")
 wo1=w1.lower()
 print(wo1)
+
