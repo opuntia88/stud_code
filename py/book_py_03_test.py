@@ -42,3 +42,16 @@ w1=input("enter any word:")
 wo1=w1.lower()
 print(wo1)
 
+#25. 사용자에게 퍼스트네임을 입력받고, 5자미만이면 성을 입력받아 공백없이 대문자로 출력하고
+#    5자 이상이면 소문자로 출력하시오.
+
+fn1=input("enter the firstname!:")
+Fm=len(fn1)
+if Fm<5:
+    ln1=input("enter your lastname:")
+    nm1=(fn+ln1).upper()
+    print(nm1)
+else:
+    print(fn1.lower())
+
+
