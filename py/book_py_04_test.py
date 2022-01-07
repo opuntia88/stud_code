@@ -1,6 +1,6 @@
 import math
 
-#27.사용자에게 소수점이하 자릿수가 많은 숫자를 입력하게 요청. 이 숫자에 2를 곱한 결과를 출력한다.
+#27.사용자에게 소수점이하 자릿수가 많은 숫자를 입력하게 요청. 이 숫자에 2를 거듭제곱한 결과를 출력한다.
 nm1=float(input("enter the number of decimal places or more:"))#
 Nm1=nm1**2 #2거듭제곱하기
 print(Nm1)
@@ -43,11 +43,16 @@ print("1) Square \n2) Triangle\n\n")
 ans=int(input("enter the number: "))
 if ans==1:
     r3=int(input("enter the number of radius:"))
-    print("the wideness of circle is"(r3**2)*math.pi)
+    w1=(r3**2)*math.pi
+    print("the wideness of circle is ",float(w1))
+    #print("the wideness of circle is"(r3**2)*math.pi)  
+    # ► TypeError: 'str' object is not callable -> 해당 대상이 문자열이기에 int나 float로 바꿔줘야함
 elif ans==2:
-    r4, h=input("enter the radius and height:").split
-    int(r4, h)
-    print("the wideness of cylinder is"((r4**2)*math.pi)*h)
+    r4=input("enter the radius:")
+    h1=input("enter the height:")
+    int(r4, h1)
+    w2=((r4**2)*math.pi)*h1
+    print("the wideness of cylinder is ", float(w2))
 else:
     print("incorrect message.")
 
