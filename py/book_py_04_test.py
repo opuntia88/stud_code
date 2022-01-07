@@ -50,7 +50,8 @@ if ans==1:
 elif ans==2:
     r4=input("enter the radius:")
     h1=input("enter the height:")
-    int(r4, h1)
+    r4=int(r4)
+    h1=int(h1)
     w2=((r4**2)*math.pi)*h1
     print("the wideness of cylinder is ", float(w2))
 else:
