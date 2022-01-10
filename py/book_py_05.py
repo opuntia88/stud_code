@@ -7,3 +7,9 @@ for i in range(1,10): #i의 기본값을 1로 지정, 10이되면 루프를 종�
 for i in range(1, 10, 2): #1부터 시작해서 2씩 증가하여 10이되면 종료한다.
     print(i)
 
+for i in range(10, 1, -3): #10부터 시작해서 3씩 감소하여 1이되면 종료한다.
+    print(i)
+
+for i in "word": #word라는 문자열의 각 문자를 한 줄씩 출력한다.
+    print(i)
+
