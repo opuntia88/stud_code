@@ -9,3 +9,9 @@ nm2=input("enter the number:")
 for i in range(0,3):
     print("%d \n %d"%(nm1,nm2))
 
+#37. 사용자의 이름을 출력받아서 각 문자의 단어를 한줄에 하나씩 출력
+nm3=input("enter your name:")
+for i in range(nm3):
+    print(i)
+
+#38. 
