@@ -21,4 +21,9 @@ nm4=input("enter the number:")
 for i in nm3 (0,nm4):
     print(i)
 
-    
+#39. 1부터 12사이의 값을 입력하도록 요구하여, 해당숫자의 12까지의 곱셈표를 출력하라.
+nm5=int(input("enter the number is between 1 tot 12:"))
+
+for i in range(0,12):
+    nm6=i*nm5
+    print("%dx%d=%d"%(nm5,i,nm6))
