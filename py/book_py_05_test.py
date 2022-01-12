@@ -11,7 +11,14 @@ for i in range(0,3):
 
 #37. 사용자의 이름을 출력받아서 각 문자의 단어를 한줄에 하나씩 출력
 nm3=input("enter your name:")
-for i in range(nm3):
+for i in nm3:
     print(i)
 
-#38. 
+#38. 37번 프로그램을 수정하여 숫자도 입력하게 해서 각 문자를 입력한 숫자만큼 반복
+
+nm4=input("enter the number:")
+
+for i in nm3 (0,nm4):
+    print(i)
+
+    
