@@ -27,7 +27,7 @@ nm3=int(input("enter the number is between 1 tot 12:"))
 
 for i in range(1,13):#곱셈은 1부터 시작, 12까지 나와야하므로 13으로 끝 값을 설정.
     n3=i*nm3 #곱셉의 결과값을 먼저 구해서 다음 함수식을 간결하게 만듬.
-    print("%dx%d=%d"%(nm3,i,n3)) #입력값xi=곱셈값
+    print(nm3,"x",i,"=",n3) #입력값xi=곱셈값, 이렇게도 입력이 가능 ⌘⌘⌘⌘
 
 #40.50미만의 숫자를 입력하도록 요청, 50부터 입력한 숫자까지 카운트하여 입력된 숫자까지 출력한다.
 nm4=int(input("enter the number under 50:"))
@@ -69,6 +69,8 @@ elif d=="down":
     n6=int(input("enter the number under 20:"))
     for i in range(0,n6+1):
         print(n6-i)
+    #이것도 가능
+    #for i in range(20, n6-1, -1)
 else:
     print("l don't understand.")
 
