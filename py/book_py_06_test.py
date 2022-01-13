@@ -1,7 +1,8 @@
 #45.total=0, 값을 계속요구하면서 총 합이 50을 넘으면 루프를 멈춘다.
 t1=0
+n1=int(input("enter the number: "))
 while t1<50:
-    n1=int(input("enter the number: "))
+    n1=int(input("enter the number(hint:up!!): "))
     t1=t1+n1
 print("total is", t1)
 
@@ -18,7 +19,7 @@ n3= int(input("enter the number:"))
 t3=n2+n3
 ans1=input("Do you want to add the number?(y/n):")
 ans1.lower()
-while ans1!="y":
+while ans1=="y":
     n3=int(input("enter the number:"))
     t3=t3+n3#사용자가 y를 눌렀으므로, 입력받은 값을 더함
     ans1=input("Do you want to add the number?(y/n):")#또 더하는 함수를 진행여부를 물어봄
@@ -28,11 +29,12 @@ print("the total is", t3)
 nm1=input("who are you invite the party?:")
 print(nm1,"has now been invited.")
 n4=1
-ans2=input("do you want to invite more?(y/n")
+ans2=input("do you want to invite more?(y/n)")
 while ans2=="y":
     nm1=input("who are you invite the party?:")
     print(nm1,"has now been invited.")
     n4=n4+1
+    ans2=input("do you want to invite more?(y/n)")
 print("you invited " ,n4 ,"people.")
 
 
@@ -45,5 +47,6 @@ while n5!=comp:
         print("too high!")
     else:
         print("too low~")
-    count=count+1
+    count=count+1#
+    n5=int(input("match the number!:"))
 print("well done, you attempted ",count,"times")
