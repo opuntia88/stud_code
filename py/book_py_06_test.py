@@ -36,3 +36,14 @@ while ans2=="y":
 print("you invited " ,n4 ,"people.")
 
 
+#49.compnum이라는 변수 50 생성, 사용자에게 숫자를 입력받아 compnum과의 동일여부 판단후 엽앤 다운을 알려두고 다시 맞춰봄. 맞으면 몇번쨰로 맞는지 알려줌
+comp=50
+count=0
+n5=int(input("match the number!:"))
+while n5!=comp:
+    if n5>comp:
+        print("too high!")
+    else:
+        print("too low~")
+    count=count+1
+print("well done, you attempted ",count,"times")
