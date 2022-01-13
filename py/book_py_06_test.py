@@ -24,5 +24,15 @@ while ans1!="y":
     ans1=input("Do you want to add the number?(y/n):")#또 더하는 함수를 진행여부를 물어봄
 print("the total is", t3) 
 
-#48.
+#48.사용자가 초대하고 싶은 사람의 이름을 요청, 초대문구를 출력하면서 숫자 카운트를 한다. 더이상 초대하고싶은 사람이 없을경우, 몇명이 참석하는 지 출력.
+nm1=input("who are you invite the party?:")
+print(nm1,"has now been invited.")
+n4=1
+ans2=input("do you want to invite more?(y/n")
+while ans2=="y":
+    nm1=input("who are you invite the party?:")
+    print(nm1,"has now been invited.")
+    n4=n4+1
+print("you invited " ,n4 ,"people.")
+
 
