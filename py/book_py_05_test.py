@@ -77,7 +77,7 @@ n7=int(input("How many do you invite the people?:"))
 if n7<10:
     nm6=input("enter your name:")
     for i in range(0, n7):
-        print("%s has been invited")
+        print("%s has been invited" %nm6)
 else:
     print("Too much people~")
 
