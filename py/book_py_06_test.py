@@ -47,6 +47,15 @@ while n5!=comp:
         print("too high!")
     else:
         print("too low~")
-    count=count+1#
+    count=count+1#횟수 계산
     n5=int(input("match the number!:"))
 print("well done, you attempted ",count,"times")
+
+#50.사용자에게 10-20사이 입력요청, 이하면 too low,이상이면 too high 출력하며 루프, 사이입력시 thank you 출력
+n6=int(input("enter the number between 10 to 20:"))
+while n6>=20 or n6<=10:
+    if n6>=20:
+        print("too high~")
+    else:
+        print("too low~")
+print("thank you")
