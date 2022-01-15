@@ -59,3 +59,7 @@ while n6>=20 or n6<=10:
     else:
         print("too low~")
 print("thank you")
+
+#51.
+n7=int(input("enter the any number:"))
+print("There are",n7+3, "green bottles hanging on the wall")
