@@ -60,6 +60,13 @@ while n6>=20 or n6<=10:
         print("too low~")
 print("thank you")
 
-#51.
+#51.사용자가 입력한 값을 변형시켜, 문제를 출력하며 풀도록 함
 n7=int(input("enter the any number:"))
-print("There are",n7+3, "green bottles hanging on the wall")
+n8=n7*2+3#수의 랜덤화
+print("There are",n8, "green bottles hanging on the wall, if 1 bottle should accidentally fall")
+n9=int(input("How many green bottles will be hanging on the wall?:"))#문제 출력
+while n9!=n8-1:
+    n8=n8-1
+    print("There are",n8, "green bottles hanging on the wall, if 1 bottle should accidentally fall")
+    n9=int(input("How many green bottles will be hanging on the wall?:"))#n8이 한개 감소한 상태에서의 문제풀이
+    
