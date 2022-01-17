@@ -65,16 +65,17 @@ n7=int(input("enter the any number:"))
 n8=n7*2+3#수의 랜덤화
 print("There are",n8, "green bottles hanging on the wall, if 1 bottle should accidentally fall")
 n9=int(input("How many green bottles will be hanging on the wall?:"))#문제 출력
-while n9!=n8-1:
-    if n8-1!=0:
-        print("try again!")
+while n9!=n8-1:#답이 틀렸을때
+    if n8-1!=0:#답이 0이 아닐때
+        print("try again!\n")
         n8=n8-1#1이 줄어든 값으로 다음의 문제를 계속 반복
         print("There are",n8, "green bottles hanging on the wall, if 1 bottle should accidentally fall")
         n9=int(input("How many green bottles will be hanging on the wall?:"))#n8이 한개 감소한 상태에서의 문제풀이
     else:#병의 갯수가 0이 되었을때.
         print("There are no more green bottles hanging on the wall.")
-        n9=n8-1
-if  n8-1!=0:
-    print("There will be",n8-1,"green bottle hanging on the wall")     
+        n9=n8-1#루프탈출
+if  n8-1!=0:#루프에 탈출했을때 0이되서 탈출한 경우만
+    print("There will be",n8-1,"green bottle hanging on the wall")  
+
 
 
