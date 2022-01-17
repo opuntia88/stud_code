@@ -66,7 +66,13 @@ n8=n7*2+3#수의 랜덤화
 print("There are",n8, "green bottles hanging on the wall, if 1 bottle should accidentally fall")
 n9=int(input("How many green bottles will be hanging on the wall?:"))#문제 출력
 while n9!=n8-1:
-    n8=n8-1
-    print("There are",n8, "green bottles hanging on the wall, if 1 bottle should accidentally fall")
-    n9=int(input("How many green bottles will be hanging on the wall?:"))#n8이 한개 감소한 상태에서의 문제풀이
-    
+    if n8-1!=0:
+        print("try again!")
+        n8=n8-1#1이 줄어든 값으로 다음의 문제를 계속 반복
+        print("There are",n8, "green bottles hanging on the wall, if 1 bottle should accidentally fall")
+        n9=int(input("How many green bottles will be hanging on the wall?:"))#n8이 한개 감소한 상태에서의 문제풀이
+    else:#병의 갯수가 0이 되었을때.
+        print("There are no more green bottles hanging on the wall.")
+        n9=n8-1
+        
+
