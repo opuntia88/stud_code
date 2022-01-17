@@ -74,5 +74,7 @@ while n9!=n8-1:
     else:#병의 갯수가 0이 되었을때.
         print("There are no more green bottles hanging on the wall.")
         n9=n8-1
-        
+if  n8-1!=0:
+    print("There will be",n8-1,"green bottle hanging on the wall")     
+
 
