@@ -55,12 +55,12 @@ print("you matched!! congraturation~")
 
 #58. 임의로 생성된 두 정수를 덧셈식을 다섯개를출제하여, 사용자에게 맞추도록 한다. 그런 후 몇개를 맞추었는지 출력.
 j=0
-for i in range(0,5):
-    comp3= random.randint(1,50)
-    comp4= random.randint(51,100)
+for i in range(0,5):#5문제만큼만 출력
+    comp3= random.randint(1,100)
+    comp4= random.randint(1,100)
     ans=comp3+comp4
-    
-    n4=int(input("enter the answer of the sum to adding two numbers between 1~100f]: "))
+    print(comp3,"+",comp4)
+    n4=int(input("="))
     if n4 == ans:
         j=j+1
 print("you corrected",j,"answers")   
@@ -69,8 +69,8 @@ print("you corrected",j,"answers")
 #The decision came out of the blue. The new trainees are still very green.They want me to conform, to be lily-white. efforts to expand the outreach to black voters. The rims of her eyes were red with crying.
 comp4=random.choice(["blue","green","black","red","white"])
 color=input("What color is computer choose?(blue/green/black/white/red):")
-color=color.lower()
-while comp4!=color:
+color=color.lower()#소문자로 변경.
+while comp4!=color:#컬러가 맞지않을경우
     if comp4 == "blue":
         print("The decision came out of the blue")
     elif comp4 == "green":
@@ -81,6 +81,8 @@ while comp4!=color:
         print("They want me to conform, to be lily-white.")
     elif comp4 == "red":
         print("The rims of her eyes were red with crying.")
+    else:#이 외의 문자를입력하였을 경우,
+        print("try again~")
     color = input("enter color again:")
 print("well done!")
 
