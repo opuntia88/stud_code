@@ -24,12 +24,62 @@ comp1=random.randint(1,5)# 1과 5사이의 값을 임의로 선정
 if n2==comp1:
     print("well done!")
 else:
-    if n2>comp1:
+    if n2>comp1:  # 컴퓨터의 값보다 사용자가 입력한 값이 큰 경우.
         print("too high")
     else:
-        print("too low")
+        print("too low") #작은경우
     n2=int(input("enter the number betwwen 1~5:"))
-    if n2==comp1:
+
+    if n2==comp1: #위에서 입력된 n2의 값이 컴퓨터값과 동일 여부에 따라 판별하기위해 안쪽으로 들여넣기함.
         print("correct!")
     else:
-        print("you lose..")
+        print("you lose.., answer is", comp1)
+
+#56.1~10사이의 값을 선택, 사용자에게 숫자를 입력하도록해서 해당값을 맞출때까지 반복한다.
+comp2=random.randint(1,10)
+n3=int(input("match the number:"))
+while comp2!=n3:#정답이 나올때까지 반복
+    n3=int(input("incorrect!! please enter number again:"))
+print("you matched!! congraturation~")
+
+#57.56번의 값을 데려와서 입력한 숫자가 작은지 큰지를 알려주고 숫자를 다시 고르게 하라.
+comp2=random.randint(1,10)
+n3=int(input("match the number:"))
+while comp2!=n3:
+    if comp2>n3:# 컴퓨터 값보다 큰지 작은지 여부를 출력.
+        print("Too low~")
+    else:
+        print("Too high~")
+    n3=int(input("please enter number again:"))
+print("you matched!! congraturation~")
+
+#58. 임의로 생성된 두 정수를 덧셈식을 다섯개를출제하여, 사용자에게 맞추도록 한다. 그런 후 몇개를 맞추었는지 출력.
+j=0
+for i in range(0,5):
+    comp3, comp4= random.randint(1,100)
+    ans=comp3+comp4
+    
+    n4=int(input("enter the answer of the sum to adding two numbers: "))
+    if n4 == ans:
+        j=j+1
+print("you corrected",j,"answers")   
+
+#59. 다섯개의 색을 제시한 뒤 컴퓨터가 제시한 색상과 맞을경우 well done을 출력, 아닐경우 아래의 문장으러 위츠하게 표현한 후 맞출떄까지 반복.
+#The decision came out of the blue. The new trainees are still very green.They want me to conform, to be lily-white. efforts to expand the outreach to black voters. The rims of her eyes were red with crying.
+comp4=random.choice(["blue","green","black","red","white"])
+color=input("What color is computer choose?(blue/green/black/white/red):")
+color=color.lower()
+while comp4!=color:
+    if color == "blue":
+        print("The decision came out of the blue")
+    elif color == "green":
+        print("The new trainees are still very green")
+    elif color == "black":
+        print("efforts to expand the outreach to black voters.")
+    elif color == "white":
+        print("They want me to conform, to be lily-white.")
+    elif color == "red":
+        print("The rims of her eyes were red with crying.")
+    color = input("enter color again:")
+    
+
