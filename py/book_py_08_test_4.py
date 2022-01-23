@@ -32,21 +32,23 @@ turtle.pensize(2)
 #turtle.left(180)
 #turtle.forward(100)
 #turtle.pendown()
-for i in range(0,3):
-    turtle.penup()#펜을 띄운다.
-    if i==0:#각 도형의 색을 다르게 한다.
-        turtle.color("black","red")
-    elif i==1:
-        turtle.color("black","orange")
-    elif i==2:
-        turtle.color("black","yellow")
-    turtle.right(90)
-    turtle.forward(100)
-    turtle.pendown()#도형을 그릴 점부터 선을 내린다.
-    turtle.begin_fill()#그릴 도형에만 색상을 씌운다.
-    for j in range(0,3):
-        turtle.forward(100)
-        turtle.right(120)
-    turtle.end_fill()
-    
+#for i in range(0,3):
+#    turtle.penup()#펜을 띄운다.
+#    if i==0:#각 도형의 색을 다르게 한다.
+#        turtle.color("black","red")
+#    elif i==1:
+#        turtle.color("black","orange")
+#    elif i==2:
+#        turtle.color("black","yellow")
+#    turtle.right(90)
+#    turtle.forward(100)
+#    turtle.pendown()#도형을 그릴 점부터 선을 내린다.
+#    turtle.begin_fill()#그릴 도형에만 색상을 씌운다.
+#    for j in range(0,3):
+#        turtle.forward(100)
+#        turtle.right(120)
+#    turtle.end_fill()
+
+
+
 turtle.exitonclick()
