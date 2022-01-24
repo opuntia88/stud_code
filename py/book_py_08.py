@@ -14,7 +14,7 @@ for i in range(0,5):#5각형이므로 5번 반복.
     turtle.right(72)#72만큼 왼쪽으로 꺾음.
 turtle.end_fill()#안을 채우는 작업이 중지되도록 파이썬에게 알려준다.
 
-#turtle.exitonclick()#for문이 끝나면 터틀을 끝냄.
+#turtle.exitonclick()#for문이 끝나면 터틀을 끝냄.  
 turtle.penup()#터틀에 움직임을 따르는 선이 사라짐.
 turtle.left(90)
 turtle.forward(200)
