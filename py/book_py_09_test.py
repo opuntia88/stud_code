@@ -82,5 +82,17 @@ while q7=="y":
     jack=input("who do you want to invite for party:")
     nam.append(jack)
     q7=input("do you want to invite more?(y/n)")
-print("you invite ",len(nam)"number of member.")
+print("you invite ",len(nam),"number of member.")
 #IndexError: list assignment index out of range -> 빈리스트인데 없는 인덱스를 찾아서 생기는 문제. append나 insert로 추가.
+
+#77.76번 프로그램을 이용해서 초대할 사람들의 이름이 리스트에 모두 추가되면 전체명단을 출력.리스트중 이름을 하나 출력하라고함
+print(nam)
+q8=input("please choose the name in list:")
+print(nam.index(q8))#q8의 인덱스를 출력
+print("do you want to invite",q8,"?")
+q9=input("(y/n):")
+if q9!="y":
+    nam.remove(q9)
+    print(nam)
+else:
+    print("let's party")
