@@ -36,12 +36,51 @@ if q4 in nm3:
 else:
     print("It's wrong input.")
 
-#73. 사용자에게 좋아하는 음식을 네개 요청하게해서 인덱스의 번호와 항목이 모두 출력되도록 딕셔너리를 출력,
+#73. 사용자에게 좋아하는 음식을 네개 입력을 요청하게해서 인덱스의 번호와 항목이 모두 출력되도록 딕셔너리를 출력,
 #    제거하고 싶은 항목을 묻고 그것을 제거. 남은 딕셔터리 출력,
-nm4={1:"pizza",2:"tart",3:"coffee",4:"bagel"}
-print(nm4)
-q5=input("what do you want to delete food i dictionary?")
-if q5 in nm4:
-    nm4.remove(q5)
+f_d={}#딕셔너리 생성
+f1=input("enter the food yau are like:")
+f_d[1]=f1
+f2=input("enter the food yau are like:")
+f_d[2]=f2
+f3=input("enter the food yau are like:")
+f_d[3]=f3
+f4=input("enter the food yau are like:")
+f_d[4]=f4
+print(f_d)
+q5=int(input("enter the food you want to delete in dictionary index"))#여기서 int로 묶으면 바로 인덱스 입력이됨.
+if q5 in f_d:
+    del f_d[q5] #딕셔너리는 이렇게 삭제! *****
+    print(f_d)
 else:
     print("it's wrong")
+
+#74.열개의 색이 담긴 리스트를 생성. 0에서 4사이에서 시작해서 5에서 9사이에서의 끝숫자를 출력하여 사잇값의 색상을 출력하라.
+col=["red","orange","yellow","lightgreen","green","skyblue","blue","indigoblue","purple","pink"]
+n1=int(input("enter the number 0~4:"))
+n2=int(input("enter the number 5~9:"))
+print(col[n1:n2])#해당 인덱스로부터 입력한 인덱스까지 출력.
+
+#75.세자리숫자 네개가 담긴 리스트를 생성, 각 항목을 한줄에 하나씩 출력해서 입력을 요청.매칭되면 해당 인덱스를 출력, 아닐경우 "That's not in the list"를 출력하라.
+nm5=["123","234","345","456"]
+for i in range(0,4):
+    print(nm5[i])
+q6=input("enter the three-figure number:") #""로 들어가 있을경우에는 문자열로 들어가 있는 것이므로 int 로는 엮지않는디.
+if q6 in nm5:
+    print(nm5.index[q6])
+else:
+    print("That's not in the list")
+
+#TypeError: 'set' object is not subscriptable -> 리스트는 []로 묶고, 딕셔너리나 set문은 {}
+
+#76.사용자에게 파티에 초대할 이름 세명을 입력을 요청하고 리스트에 저장. 원하는 만큼 입력을 요청. 거부하면 몇명을 초대했는지 출력.
+nam=[]#리스트 선언 -> 빈데이터므로 값이 없음
+#nam=[0]*10 #0값이 들어있는 10개의 방을 잡는다.
+nam=input("who do you want to invite for party 3 people(seperate " "").split()
+q7=input("do you want to invite more?(y/n)")
+while q7=="y":
+    jack=input("who do you want to invite for party:")
+    nam.append(jack)
+    q7=input("do you want to invite more?(y/n)")
+print("you invite ",len(nam)"number of member.")
+#IndexError: list assignment index out of range -> 빈리스트인데 없는 인덱스를 찾아서 생기는 문제. append나 insert로 추가.
