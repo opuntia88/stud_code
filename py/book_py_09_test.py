@@ -67,7 +67,9 @@ for i in range(0,4):
     print(nm5[i])
 q6=input("enter the three-figure number:") #""로 들어가 있을경우에는 문자열로 들어가 있는 것이므로 int 로는 엮지않는디.
 if q6 in nm5:
-    print(nm5.index[q6])
+    print(nm5.index(q6))
+    #print(nm5.index[q6])->예시 print(f_tuple.index("banana"))
+#TypeError: 'builtin_function_or_method' object is not subscriptable -> []연산자를 사용할 수 없는 객체에 이연산자를 사용해서 그럼.
 else:
     print("That's not in the list")
 
@@ -92,7 +94,26 @@ print(nam.index(q8))#q8의 인덱스를 출력
 print("do you want to invite",q8,"?")
 q9=input("(y/n):")
 if q9!="y":
-    nam.remove(q9)
+    nam.remove(q8)
     print(nam)
 else:
     print("let's party")
+
+#78. 네개의 tv프로그램 타이틀의 리스트를 생성, 한줄씩 출력. 그러고 새로운 프로그램을 입력받아 원하는 위치에 넣고 재출력한다.
+prog=["runningman","muhandojeon","sininwang","inthesoop"]
+for i in range(0,4):
+    print(prog[i])
+inp=input("enter the new program name!:")
+prog.append(inp)
+print(prog)
+
+#79. nums라는 빈 리스트를 생성, 사용자에게 숫자를 입력할 것을 요청. 
+num=[0]*3
+for i in range(0,3):
+    num[i]=int(input("enter the number:"))
+q10=input("do you want to add third number to list?:")
+if q10 =="n":
+    num.remove(num[2])
+    print(num)
+else:
+    print(num)
