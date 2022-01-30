@@ -83,7 +83,7 @@ q7=input("do you want to invite more?(y/n)")
 while q7=="y":
     jack=input("who do you want to invite for party:")
     nam.append(jack)
-    q7=input("do you want to invite more?(y/n)")
+    q7=input("do you want to invite more?(y/n):")
 print("you invite ",len(nam),"number of member.")
 #IndexError: list assignment index out of range -> 빈리스트인데 없는 인덱스를 찾아서 생기는 문제. append나 insert로 추가.
 
@@ -91,7 +91,7 @@ print("you invite ",len(nam),"number of member.")
 print(nam)
 q8=input("please choose the name in list:")
 print(nam.index(q8))#q8의 인덱스를 출력
-print("do you want to invite",q8,"?")
+print("do you want to invite:",q8,"?")
 q9=input("(y/n):")
 if q9!="y":
     nam.remove(q8)
@@ -104,7 +104,8 @@ prog=["runningman","muhandojeon","sininwang","inthesoop"]
 for i in range(0,4):
     print(prog[i])
 inp=input("enter the new program name!:")
-prog.append(inp)
+inpN=int(input("And where so you want to place the program name!:"))#넣고싶은 위치를 설정,
+prog.insert(inpN,inp)#넣고싶은위치에 넣을 항목을 정함.
 print(prog)
 
 #79. nums라는 빈 리스트를 생성, 사용자에게 숫자를 입력할 것을 요청. 
