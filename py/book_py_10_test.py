@@ -38,4 +38,12 @@ while i==0:
         i=0
         eng1=input("please enter the UPPER CLASS word!:")
 
+#84.사용자에게 영어단어를 입력하도록 하여 첫 두 문자만 대문자로 출력하라
 #
+# eng2=input("enter the english word:")
+eng2="AppLe"
+eng2=eng2.lower()
+f=eng2[0:2].upper()#capitalize는 첫문자만 대문자로 바꾸는 것.
+d=eng2[2:]#마지막 인덱스를 모르므로 이렇게 비워둠
+print(f,d)
+#print(eng2[0:2].capitalize(),eng2[2:])
