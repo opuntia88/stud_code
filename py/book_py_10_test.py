@@ -47,3 +47,11 @@ f=eng2[0:2].upper()#capitalize는 첫문자만 대문자로 바꾸는 것.
 d=eng2[2:]#마지막 인덱스를 모르므로 이렇게 비워둠
 print(f,d)
 #print(eng2[0:2].capitalize(),eng2[2:])
+
+#85.사용자의 이름을 입력받은 뒤, 이름에 모음이 몇개인지출력하라.
+nm1=input("enter your name!:")
+vw=["a","e","i","o","u","w","y"]
+j=0
+for vw in nm1:
+    j=j+1
+print("the number of vowel is ", j)
