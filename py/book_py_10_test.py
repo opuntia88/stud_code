@@ -1,5 +1,8 @@
 #80.사용자에게 이름을 입력하라고 요청. 입력된 이름의 길이를 출력. 그 후 성을 입력하라고 요청 후 성의 길이를 출력. 
 #그 후 성과 이름 사이에 공백을 하나두어 저장한 길이를출력하고 그를 출력하라.
+from platform import java_ver
+
+
 fn=input("enter your first name?:")
 print("your first name is",len(fn),"word.")#이름의 길이 출력.
 ln=input("enter your last name?:")
@@ -49,9 +52,44 @@ print(f,d)
 #print(eng2[0:2].capitalize(),eng2[2:])
 
 #85.사용자의 이름을 입력받은 뒤, 이름에 모음이 몇개인지출력하라.
-nm1=input("enter your name!:")
+#nm1=input("enter your name!:")
+nm1="choieunjeong"
 vw=["a","e","i","o","u","w","y"]
 j=0
-for vw in nm1:
-    j=j+1
+for i in range(0,len(nm1)):
+    if nm1[i] in vw: #여기서 앞의 변수는 무조건 변수여야함. 리스트나 튜블이 있어서는 오류가 남.
+        j=j+1
 print("the number of vowel is ", j)
+
+#86. 사용자에게 새로운 비밀번호 입력을 요청, 비밀번호를 입력을 한번 더 요구한다, 맞으면 THANKYOU 
+#    대소문자가 안맞으면  they must be in the same case라고 출력, 일치하지않으면 incorrect.
+pw=input("enter the new password:")#패스워드 입력
+ent=input("then, enter your password:")#패스워드입력,
+if pw==ent:
+    print("Thnakyou.")
+elif pw.lower()==ent.lower()
+    print("they must be in the same case.!")
+else:
+    print("incoreect")
+#if pw!=ent:
+#    ent=input("Again, enter your password:")#패스워드 재입력
+#    if pw.isupper():
+#        k=1
+#    else:
+#        k=0
+#
+#    if ent.isupper():
+#        o=1
+#    else:
+#        o=0
+#    ent=ent.lower()
+#    pw=pw.lower()
+#    if pw==ent:
+#        if k==o:
+#            print("incorrect!")
+#        else:
+#            print("they must be in the same case.") 
+#    else: 
+#        print("incorrect!") 
+#
+#print("thank you!!")
