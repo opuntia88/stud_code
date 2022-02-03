@@ -67,7 +67,7 @@ pw=input("enter the new password:")#패스워드 입력
 ent=input("then, enter your password:")#패스워드입력,
 if pw==ent:
     print("Thnakyou.")
-elif pw.lower()==ent.lower()
+elif pw.lower()==ent.lower():
     print("they must be in the same case.!")
 else:
     print("incoreect")
@@ -93,3 +93,24 @@ else:
 #        print("incorrect!") 
 #
 #print("thank you!!")
+
+#87. 단어를 입력하라고 요청, 그 단어를 거꾸로 하나씩 츨력하라.
+wd=input("enter thr any word!")
+m=len(wd)
+j=1
+for i in wd:#wd리스트 안의 범주에서,
+    rvs=m-j#뒤에서 앞의 단어의 인덱스로 바뀌어야 하므로
+    one=wd[rvs]#뒤에서 부터의 변수값을 저장.
+    print(one)#출력
+    j=j+1
+
+#m=len(wd)->정수값의 
+#rvs=[0]*m
+#for i in range(0,m):
+#    k=m-i
+#    rvs[k]=wd[i]
+#for letter in rvs:
+#    print(letter,end="")
+
+#IndexError: list assignment index out of range
+#-> 내용물안의 원소가 없는 경우에서 넣을경우 나는 에러, 해당에러의 경우 append나 insert를 사용.
