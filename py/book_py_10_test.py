@@ -1,6 +1,5 @@
 #80.사용자에게 이름을 입력하라고 요청. 입력된 이름의 길이를 출력. 그 후 성을 입력하라고 요청 후 성의 길이를 출력. 
 #그 후 성과 이름 사이에 공백을 하나두어 저장한 길이를출력하고 그를 출력하라.
-from platform import java_ver
 
 
 fn=input("enter your first name?:")
@@ -28,13 +27,17 @@ elif sp>ep:
 else:
     ep+1
 print("time is gold"[sp:ep])
+
+#ㅇㅏㅍ두ㅣ를 제로 입ㅕ할 경우
+#print(pem[sp:ep])로 작성하면 해당리스트의 특정영역을 출력이 가능하다.
+
 #TypeError: cannot unpack non-iterable int object--> 별도의 식으로 정의해야함.
 
 #83. 사용자에게 대문자로 문자를 입력하도록하여, 메세지에 소문자가 있다면 모두 대문자로 입력할 때까지 무한 반복함.
 eng1=input("enter the uppercase word!:")
 i=0 #관련된 식이 없을경우 장치를 만들면 됨, 
 while i==0:
-    if eng1.isupper():
+    if eng1.isupper():#해당단어가 대문자일 경우, 하나라도 소문자가있으면 소문자로 됨,
         i=1
         print("yes! it is upper class")
     else:
