@@ -9,6 +9,12 @@
 from array import * 
 #파이썬이 배열 라이브러리를 사용할 수 있도록 프로그램의 첫번쨰줄에 위치해야한다.
 
+
+pl=array('i',[33,53,343])
+b=array('i',[22,3])
+pl.extend(b)
+print(pl)
+
 nums= array('i',[45,235,455,567,678,788])
 #array('i',[45,235,455,567,678,788]) 가능
 print(nums)
@@ -31,19 +37,21 @@ print("sort:",nums)
 nums=nums.pop()#마지막 항목을 제거
 print("pop:",nums)
 
+nuns=array('i',[22,21,111])
 newArray=array('i',[])#빈 어레이를 생성
 more=int(input("How many items:"))
 for y in range(0,more):
     newV=int(input("enter num:"))
     newArray.append(newV)
-nums.extend(newArray) #nums의 배열과 newarray배열의 항목을 결합
-print(nums)
+print(newArray)
+nuns.extend(newArray)#nums의 배열과 newarray배열의 항목을 결합
+print(nuns)
 
 getRid=int(input("enter item index:"))
-nums.remove(getRid)
-print(nums)
+nuns.remove(getRid)
+print(nuns)
 
-print(nums.count(45))
+print(nuns.count(45))
 
 
 
