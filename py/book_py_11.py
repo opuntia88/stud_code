@@ -52,6 +52,3 @@ nuns.remove(getRid)
 print(nuns)
 
 print(nuns.count(45))
-
-
-
