@@ -47,7 +47,22 @@ for i in inp04:
 
 print(d,"is ",n,"in array")
 
-#92.
+#92.두개의 빈 배열을 생성, 하나에는 사용자가 입력한 숫자를 세개를 넣고 다른하나에는 임의의 5개의 숫자를 담을것.
+#   두개의 배열을 하나의 배열로 결합, 결합한 배열을 정렬하여 하나씩 출력.
+
+inp05=array('i',[])#사용자 입력 어레이
+for i in range(0,3):
+    e=int(input("enter the neutral number:"))
+    inp05.append(e)
+
+ran05=array('i',[]) #임의의 정수 어레이
+for i in range(0,5):
+    g=random.randint(0,100)#임의로 생성된 정수를 생성.
+    ran05.append(g)
+
+inp05.extend(ran05)
+inp05=sorted(inp05)
+for x in inp05:
+    print(inp05)
 
 
-        
