@@ -1,5 +1,6 @@
 from array import *
 import random
+import math
 
 #88. 다섯개의 정수를 입력받아 배열에 저장. 정렬한 뒤 역순으로 출력.
 inp01=array('i',[])
@@ -60,9 +61,53 @@ for i in range(0,5):
     g=random.randint(0,100)#임의로 생성된 정수를 생성.
     ran05.append(g)
 
-inp05.extend(ran05)
-inp05=sorted(inp05)
-for x in inp05:
-    print(inp05)
+inp05.extend(ran05)#두개의 어레이를 결합
+inp05=sorted(inp05)#정렬:오름차순으로 
+for i in range(0,8):
+    print(inp05[i])
+
+#93.사용자에세 숫자 다섯개를 입력받아 정렬하고 표시, 배열의 숫자중 하나를 고르라고 사용자에게 요청
+#   그리고 배열중 숫자를 하나 고르라고 하여 그 값으 배열에서 삭제하고 새로운 배열값을 저장.
+
+inp06=array('i',[])
+for i in range(0,5):
+    f=int(input("enter the number:"))
+    inp06.append(f)
+inp06=sorted(inp06)#리스트에서 오름차순으로 정렬.
+print("array is",inp06)
+qst06=int(input("Choose the number in the list:"))
+inp06.remove(qst06)#리스트에서 제거
+print(inp06)
+
+#94. 다섯개의 숫자들을 가진 배열을 출력, 숫자들중 하나들 사용자로 하여금 고르도록 하여 해당 인덱스를 출력.
+#    숫자가 없을 경우 입력될떄까지 반복.
+inp07=[32,25,23,22,11]
+print(inp07)
+qst07=int(input("choose the number in the array:"))
+false=0
+while false!=1:
+    if qst07 in inp07:
+        print(qst07,"is in the" , inp07.index(qst07))#인덱스를 출력
+        false = 1#제대로 입력할 경우 출력
+    else:
+        qst07=int(input("No, try again. choose the number in the array:"))
 
 
+#95. 소수점 이하의 두자리가 있는 10과 100사잉의 숫자 다섯개를 포함하는 배열 생성, 사용자에세 2와 5사이의 수를 입력받음
+#    입력한 숫자가 범위에 없는 숫자일 경우 에러메세지를 출력, 맞을 경우 사용자가 입력한 숫자를 두자리 숫자까지 출력.
+
+inp07=[12.34,23.45,34.56,45.67,67.89]
+qst07=int(input("enter the number between 2 to 5: "))
+false=0
+ans=0
+while false!=1:
+    if qst07>=2 and qst07<=5:
+        for i in range(0,5):
+            ans=inp07[i]/qst07
+            inp07[i]=round(ans,2)#사용자가 고른숫자로 소수를 나누어 소수점 2자리까지만 배열에 추가.
+            false=1
+            #inp07[i]=round(inp07[i],2)
+    else:
+        print("that's wrong.")
+        qst07=int(input("enter the number between 2 to 5: "))
+print(inp07)
