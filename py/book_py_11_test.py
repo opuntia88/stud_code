@@ -103,7 +103,7 @@ ans=0
 while false!=1:
     if qst07>=2 and qst07<=5:
         for i in range(0,5):
-            ans=inp07[i]/qst07
+            ans=inp07[i]/qst07# 나눗셈은 /, 몫연산은  //, 나머지연산은 %
             inp07[i]=round(ans,2)#사용자가 고른숫자로 소수를 나누어 소수점 2자리까지만 배열에 추가.
             false=1
             #inp07[i]=round(inp07[i],2)
