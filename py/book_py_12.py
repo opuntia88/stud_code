@@ -40,5 +40,5 @@ print(clas)
 for name in clas:
     print(("jack"),clas["jack"]["english"])#이름을 출력하고 english에 해당되는 값을 출력
 
-del clas["jack"]["english"]#del을 사용해서 clas리스트의 '"name"열을 삭제
+del clas["jack"]["english"]#del을 사용해서 clas리스트의 jack의 english 열의 데이터를 삭제
 print(clas)
