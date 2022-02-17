@@ -26,3 +26,11 @@ for i in l1:
     print(i)
 
 #99.요청받은위치의 행을 출력하여 그중 열의 위치를 입력받아 출력한다. 값을 변경의 원함여부를 요청해 그럴경우 변경해 행을 출력,
+r3=int(input("choose the row number between 0 to 3:"))
+print(l1[r3])
+c3=int(input("choose the column number between 0 to 2:"))
+print(l1[r3][c3])
+ans3=input("do you want to change the data?(y/n):")
+if ans=="y":
+    print
+
