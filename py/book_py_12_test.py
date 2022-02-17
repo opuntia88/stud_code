@@ -31,6 +31,8 @@ print(l1[r3])
 c3=int(input("choose the column number between 0 to 2:"))
 print(l1[r3][c3])
 ans3=input("do you want to change the data?(y/n):")
-if ans=="y":
-    print
+if ans3=="y":
+    cng=int(input("enter the number:"))
+    l1[r3][c3]=cng
+    print(l1[r3])
 
