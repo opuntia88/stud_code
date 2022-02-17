@@ -17,3 +17,12 @@ if 0<=r1<=3:
 else:
     print("you entered wrong input")
 
+#98.위의 리스트에서 사용자에게 표시할 행을 요청하고 출력, 새로운 값을 요청하고 추가하야 다시 행을 출력하라.
+r2=int(input("enter the number between 0 to 3:"))
+print(l1[r2])
+n2=int(input("enter the number for putting in the list:"))
+l1[r2].append(n2)#원하는 행에 숫자를 추가한다.
+for i in l1:
+    print(i)
+
+#99.요청받은위치의 행을 출력하여 그중 열의 위치를 입력받아 출력한다. 값을 변경의 원함여부를 요청해 그럴경우 변경해 행을 출력,
