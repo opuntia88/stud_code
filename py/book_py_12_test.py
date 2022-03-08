@@ -42,6 +42,17 @@ else:
 sales={"John":{"n":3056, "s":8463, "e":8441, "w":2694},"Tom":{"n":4832, "s":6786, "e":4737, "w":3612},
         "Anne":{"n":5239, "s":4802, "e":5820, "w":1859},"Fiona":{"n":3904, "s":3645, "e":8821, "w":2451}}
 
+print(sales)
 
+#101. 위의 프로그램을 사용해서 사용자에게 이름과 지역을 입력하라고 요청. 그와 관련된 데이터를 출력,
+#       변경하려는 데이터의 이름과 지역을 입력받아 매출 수치를 변경, 해당이름의 모든지역의 매출을 출력.
 
-
+r4=input("please choose the name:")#행선택
+if r4 in sales:#행 선택 잘못입력한 경우
+    print(sales[r4])
+c4=input("choose the city:")#열선택
+if c4 in sales[r4]:#열 선택 잘못입력한 이유
+    print(sales[r4][c4])#선택한 위치의 매출을 출력
+rev=int(input("enter the sales cost to change:"))#바꿀값을 출력
+sales[r4][c4]=rev
+print(sales[r4])#바꾸어 출력
