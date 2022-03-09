@@ -56,3 +56,18 @@ if c4 in sales[r4]:#열 선택 잘못입력한 이유
 rev=int(input("enter the sales cost to change:"))#바꿀값을 출력
 sales[r4][c4]=rev
 print(sales[r4])#바꾸어 출력
+
+#102.네명의 이름과 나이 신발사이즈를 입력하라고 요청. 입력된 이름중 하나를 입력하라고 요청한 뒤 입력된 이름의 나이와 신발사이즈를 출력한다.
+
+
+market={}
+for i in range(0,3):
+    nm=input("enter the name:")#행의 이름을 입력받음
+    ag=int(input("enter the age:"))
+    sz=int(input("enter the shoe size:"))
+    market[nm]={ag:sz}
+print(market)
+
+qst=input("choose the name")
+if qst in market:
+    print(market[qst])
