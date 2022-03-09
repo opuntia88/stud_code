@@ -92,8 +92,8 @@ _single under_
 __double under__
 ~~cancel~~
 
-![alt text][/Users/choeeunjeong/Desktop/IMG_3884.JPG]
+![IMG_3884](https://user-images.githubusercontent.com/61210677/157451708-70521954-a9ff-4112-82be-f38c741530f2.JPG)
 
 ****<size>
-<img src="/Users/choeeunjeong/Desktop/IMG_3884.JPG" width="40%"height="30%"title="px"alt="me"></img>
+<img src="https://user-images.githubusercontent.com/61210677/157451708-70521954-a9ff-4112-82be-f38c741530f2.JPG" width="40%"height="30%"title="px"alt="me"></img>
 
