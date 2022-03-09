@@ -94,3 +94,6 @@ __double under__
 
 ![alt text][/Users/choeeunjeong/Desktop/IMG_3884.JPG]
 
+****<size>
+<img src="/Users/choeeunjeong/Desktop/IMG_3884.JPG" width="40%"height="30%"title="px"alt="me"></img>
+
