@@ -71,3 +71,11 @@ print(market)
 qst=input("choose the name")
 if qst in market:
     print(market[qst])
+
+#103. 102번 프로그럄을 수정해서 모든사람의 나이와 이름을 출력.
+for i in range(0,3):
+    nm=input("enter the name:")#행의 이름을 입력받음
+    ag=int(input("enter the age:"))
+    sz=int(input("enter the shoe size:"))
+    market[nm]={ag:sz}
+    print(nm,market(nm))
