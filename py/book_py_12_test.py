@@ -78,4 +78,16 @@ for i in range(0,3):
     ag=int(input("enter the age:"))
     sz=int(input("enter the shoe size:"))
     market[nm]={ag:sz}
-    print(nm,market(nm))
+    print((nm),market(nm))
+
+#104.네명의 이름과 나이, 신발사이즈를 입력받은 후 목록에서 제거하고 싶은 사람의 이름을 입력받아제거하고 나머지데이터를 한줄식출력.
+lst={}
+for i in range(0,4):
+    nm1=input("enter the name:")
+    ag1=int(input("enter the age:"))
+    sz1=int(input("enter the age:"))
+    lst[nm1]={ag1:sz1}
+print(lst)
+
+qst1=input("choose the name to remove to list:")
+    
