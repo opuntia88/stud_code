@@ -87,7 +87,12 @@ for i in range(0,4):
     ag1=int(input("enter the age:"))
     sz1=int(input("enter the age:"))
     lst[nm1]={ag1:sz1}
+    #lst[nm1]={AG:ag1, SZ=sz1}
 print(lst)
 
 qst1=input("choose the name to remove to list:")
+del lst[qst1]
+for i in lst:
+    print(i)
+    #print(i,lst[i][AG],lst[i][SZ])
     
