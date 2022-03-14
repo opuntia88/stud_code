@@ -51,8 +51,11 @@ r4=input("please choose the name:")#행선택
 if r4 in sales:#행 선택 잘못입력한 경우
     print(sales[r4])
 c4=input("choose the city:")#열선택
-if c4 in sales[r4]:#열 선택 잘못입력한 이유
+if c4 in sales[r4]:#열 선택 잘못입력했을 경우를 대비한 if문: 맞을경우 값을 출력-> key error 대비.
     print(sales[r4][c4])#선택한 위치의 매출을 출력
+else:
+    print("you enter the wrong inpu")
+
 rev=int(input("enter the sales cost to change:"))#바꿀값을 출력
 sales[r4][c4]=rev
 print(sales[r4])#바꾸어 출력
@@ -77,8 +80,11 @@ for i in range(0,3):
     nm=input("enter the name:")#행의 이름을 입력받음
     ag=int(input("enter the age:"))
     sz=int(input("enter the shoe size:"))
-    market[nm]={ag:sz}
-    print((nm),market(nm))
+    market[nm]={"Ag":ag,"Sz":sz}
+    #print(nm,market[nm]) 이렇게 하면 이름이랑 
+    #틀려서 참조하여 코드작성
+    for nm in market:
+        print(nm,market[nm]["Ag"])
 
 #104.네명의 이름과 나이, 신발사이즈를 입력받은 후 목록에서 제거하고 싶은 사람의 이름을 입력받아제거하고 나머지데이터를 한줄식출력.
 lst={}
@@ -86,13 +92,15 @@ for i in range(0,4):
     nm1=input("enter the name:")
     ag1=int(input("enter the age:"))
     sz1=int(input("enter the age:"))
-    lst[nm1]={ag1:sz1}
+    lst[nm1]={"Ag":ag1,"Sz":sz1}#딕셔너리에서 nm1안의 변수에 해당하는 행의 AG, SZ에 해당되는 
     #lst[nm1]={AG:ag1, SZ=sz1}
-print(lst)
+    print(nm1,"\t",lst[nm1]["Ag"],"\t",lst[nm1]["Sz"])#이름, 나이, 사이즈를 한줄로 띄엉쓰기해서 출력
+# key error -> <https://korbillgates.tistory.com/95>
 
 qst1=input("choose the name to remove to list:")
 del lst[qst1]
 for i in lst:
-    print(i)
+    print(nm1,"\t",lst[nm1]["Ag"],"\t",lst[nm1]["Sz"])
+    
     #print(i,lst[i][AG],lst[i][SZ])
     
