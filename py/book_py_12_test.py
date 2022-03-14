@@ -80,7 +80,10 @@ for i in range(0,3):
     nm=input("enter the name:")#행의 이름을 입력받음
     ag=int(input("enter the age:"))
     sz=int(input("enter the shoe size:"))
-    market[nm]={"Ag":ag,"Sz":sz}
+    try:
+        market[nm]={"Ag":ag,"Sz":sz}
+    except KeyError:
+        print("check the key.")
     #print(nm,market[nm]) 이렇게 하면 이름이랑 
     #틀려서 참조하여 코드작성
     for nm in market:
