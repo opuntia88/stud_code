@@ -76,14 +76,15 @@ if qst in market:
     print(market[qst])
 
 #103. 102번 프로그럄을 수정해서 모든사람의 나이와 이름을 출력.
+market={}
 for i in range(0,3):
     nm=input("enter the name:")#행의 이름을 입력받음
     ag=int(input("enter the age:"))
     sz=int(input("enter the shoe size:"))
-    try:
-        market[nm]={"Ag":ag,"Sz":sz}
-    except KeyError:
-        print("check the key.")
+    #try:
+    market[nm]={"Ag":ag,"Sz":sz}
+    #except KeyError:
+    #    print("check the key.")
     #print(nm,market[nm]) 이렇게 하면 이름이랑 
     #틀려서 참조하여 코드작성
     for nm in market:
@@ -94,16 +95,19 @@ lst={}
 for i in range(0,4):
     nm1=input("enter the name:")
     ag1=int(input("enter the age:"))
-    sz1=int(input("enter the age:"))
+    sz1=int(input("enter the size:"))
     lst[nm1]={"Ag":ag1,"Sz":sz1}#딕셔너리에서 nm1안의 변수에 해당하는 행의 AG, SZ에 해당되는 
     #lst[nm1]={AG:ag1, SZ=sz1}
     print(nm1,"\t",lst[nm1]["Ag"],"\t",lst[nm1]["Sz"])#이름, 나이, 사이즈를 한줄로 띄엉쓰기해서 출력
 # key error -> <https://korbillgates.tistory.com/95>
 
 qst1=input("choose the name to remove to list:")
-del lst[qst1]
-for i in lst:
+print(lst[qst1])
+del lst[qst1]#이까지는 제대로 작동
+
+for nm in lst:# 리스트에서 행별로 출력.
     print(nm1,"\t",lst[nm1]["Ag"],"\t",lst[nm1]["Sz"])
+
     
     #print(i,lst[i][AG],lst[i][SZ])
     
