@@ -105,7 +105,7 @@ qst1=input("choose the name to remove to list:")
 print(lst[qst1])
 del lst[qst1]#이까지는 제대로 작동
 
-for nm in lst:# 리스트에서 행별로 출력.
+for nm1 in lst:# 리스트에서 행별로 출력.
     print(nm1,"\t",lst[nm1]["Ag"],"\t",lst[nm1]["Sz"])
 
     
