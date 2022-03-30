@@ -1,0 +1,40 @@
+#fill the grid
+
+//Make Karel fill the world
+//with beepers
+function main() {
+   while(leftIsClear()){
+      go();
+      turn();
+   }
+   while(frontIsClear()){
+      putBeeperLine();
+
+   //your code here
+}
+
+function putBeeperLine(){
+   putBeeper();
+   while(frontIsClear()) {
+      move();
+      putBeeper();
+   }
+}
+
+function go(){ //직진
+   while(frontIsClear()){ //오른쪽으로 비퍼 놓고오기
+      putBeeperLine();
+   }
+   turnAround();//원래있던곳으로 돌아오기
+   while(frontIsClear()){
+      move();
+   }   
+}
+
+function turn(){
+   while(frontIsBlocked()){
+      turnRight();
+      move();
+      turnRight();
+   }
+}
