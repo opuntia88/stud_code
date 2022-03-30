@@ -2,18 +2,18 @@
 
 //Make Karel fill the world
 //with beepers
-function main() {
-   while(leftIsClear()){
-      go();
+function main(){
+   while(leftIsClear()){ //맨 꼭대기에 왼쪽이 막혀있는 곳에 도착하기 전까지
+      go(); //나열하고 올라가기의 반복
       turn();
    }
-   while(frontIsClear()){
-      putBeeperLine();
-
+   while(frontIsClear()){ //맨꼭대기의 경우
+      putBeeperLine(); //마지막으로 비퍼를 나열하고 제자리로 가기
+   }
    //your code here
 }
 
-function putBeeperLine(){
+function putBeeperLine(){ //비퍼를 나열하는 함수
    putBeeper();
    while(frontIsClear()) {
       move();
@@ -21,19 +21,19 @@ function putBeeperLine(){
    }
 }
 
-function go(){ //직진
-   while(frontIsClear()){ //오른쪽으로 비퍼 놓고오기
-      putBeeperLine();
+function go(){ //줄단위로 비퍼를 나열하는 함수
+   while(frontIsClear()){ //앞이 비었을 경우
+      putBeeperLine(); //비퍼를 나열하고
    }
-   turnAround();//원래있던곳으로 돌아오기
-   while(frontIsClear()){
+   turnAround(); //뒤로 돌아서
+   while(frontIsClear()){ //원래의 자리로 돌아옴
       move();
    }   
 }
 
-function turn(){
-   while(frontIsBlocked()){
-      turnRight();
+function turn(){ //다음 열로 올라가는 함수
+   while(frontIsBlocked()){ //정면이 막혀있을경우
+      turnRight(); //시계방향으로 돌아서 올라감
       move();
       turnRight();
    }
