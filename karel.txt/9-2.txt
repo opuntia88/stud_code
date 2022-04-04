@@ -1,0 +1,31 @@
+//Karel must help rebuild 
+//broken columns. Make a 
+//column of beepers above
+//each beeper you find on
+//the first row
+function main() {
+   while(frontIsClear()){
+      iv();
+   }
+}
+
+function iv(){
+   while(frontIsClear()){
+       if(beepersPresent()){
+           turnLeft();
+           while(frontIsClear()){
+                move();
+                putBeeper();
+           }
+           turnAround();
+           while(frontIsClear()){
+                move();
+           }
+           turnLeft();
+           move(); //안움직이면 해당자리에는 비퍼가 있으므로 무한루프재생           
+       }
+       else{
+           move();
+       }
+   }
+   }

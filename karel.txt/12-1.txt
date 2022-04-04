@@ -1,0 +1,55 @@
+//Your final task is to teach
+//Karel to find the midpoint
+//of any world. You can assume
+//that all worlds are square.
+function main(){
+    while(frontIsClear()){
+        putBeeperLine();
+        if(frontIsBlocked()){
+            t(); 
+        }
+    }
+    turnRight();
+    while(frontIsBlocked()){
+        move();
+    putBeeper();
+    turnRight();
+    while(frontIsBlocked()){
+        move();
+    turnAround();
+    }
+    while(frontIsClear()){
+        pickBeeperLine();
+        if(frontIsBlocked()){
+            t(); 
+        }
+    }
+    turnRight();
+    while(frontIsBlocked()){
+        move();
+    turnLeft();
+    while(frontIsBlocked()){
+        move();
+
+}
+
+function t(){
+    turnLeft();
+    move();
+}
+
+function putBeeperLine(){ //비퍼를 나열하는 함수
+   putBeeper();
+   while(frontIsClear()) {
+      move();
+      putBeeper();
+   }
+}
+
+function pickBeeperLine(){
+   pickBeeper();
+   while(frontIsClear()) {
+      move();
+      pickBeeper();
+   }    
+}

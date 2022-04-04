@@ -20,3 +20,4 @@ if num == 1 and num ==3: #num이 1과 같거나 3과 같을경우
     print("THAT'S RIGHT!")
 else:
     print("OH,,,NO")
+ 
