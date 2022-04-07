@@ -6,9 +6,22 @@ file.write("1,")
 file.write("2,")
 file.write("4,")
 file.write("8,")
-file.write("16")
+file.write("16\n")
 file.close()
 
 file=open("Numbers.txt","r")
 print(file.read())
+file.close()
 
+#106.'Names.txt'라는 이르므이 파일을 생성, 다섯명의 이름을 추가, 실행한후 제대로 작동되는지 확인.
+file=open("Names.txt","w")
+file.write("GA\n")
+file.write("NA\n")
+file.write("DA\n")
+file.write("RA\n")
+file.write("MA\n")
+file.close()
+
+file=open("Names.txt","r")
+print(file.read())
+file.close()

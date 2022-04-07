@@ -17,7 +17,7 @@ print(file.read())
 
 file = open("Countries.txt","a")#파일을 추가하기로 열고 한줄을 추가한 뒤 닫음
 file.write("France\n")
-file.close
+file.close()
 
 file = open("Countries.txt","r")#해당파일을 읽기모드로 열고 파일 전체를 출력한다
 print(file.read())
