@@ -36,3 +36,25 @@ file.close()
 file=open("Names.txt","r")
 print(file.read())
 file.close()
+
+#109.
+print("1)Create a new file\n2)Display the file\n3)Add a new item to the file")
+nf=int(input("Make a selection 1,2 or 3:"))#답이 정수값이 나오므로 int로 엮어준다.
+if nf==1:
+    file=open("Subject.txt","w")
+    sj=input("please enter the subject name:")
+    file.write(sj)
+    file.close()
+elif nf==2:
+    file=open("Subject.txt","r")
+    print(file.read())
+    file.close()
+elif nf==3:
+    file=open("Subject.txt","a")
+    nsj=input("please enter a new subject name:")
+    file.write(nsj)
+    file.close()
+
+    file=open("Subject.txt","r")
+    print(file.read())
+    file.close()
