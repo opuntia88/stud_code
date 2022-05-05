@@ -8,8 +8,31 @@
 
 import csv #파이썬이 csv라이브러리의 명령어를 사용할 수 있도록 프로그램 상단에 있어야함
 
-file=open("Stars.txt","w")
+file=open("Stars.csv","w")
 newR="Brian,73,taurus\n"#저장할 데이터의 입력.
 file.write(str(newR))#여기서 입력받은 것을 문자열로 인식
 file.close()
 
+file = open("Stara.csv","a")
+name=input("enter name:")
+age=input("enter age:")
+star=input("enter star sign:")
+newRecord=name+","+age+","+star+"\n"
+file.write(str(newRecord))
+file.close()
+
+file=open("Stars.csv","r")
+for row in file:
+    print(row)
+
+
+file = open("Stars.csv","r")
+reader = csv.reader(file)
+rows = list(reader)
+print(rows[1])
+
+file = open("Stars.csv","r")
+search = input("enter the data you are searching for: ")
+for row in file:
+    if search in str(row):
+        print(row)
