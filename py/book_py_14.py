@@ -9,30 +9,30 @@
 import csv #파이썬이 csv라이브러리의 명령어를 사용할 수 있도록 프로그램 상단에 있어야함
 
 file=open("Stars.csv","w")
-newR="Brian,73,taurus\n"#저장할 데이터의 입력.
+newR="Brian,73,taurus\n"#저장할 데이터의 입력.-> 예시
 file.write(str(newR))#여기서 입력받은 것을 문자열로 인식
 file.close()
 
-file = open("Stara.csv","a")
-name=input("enter name:")
-age=input("enter age:")
-star=input("enter star sign:")
-newRecord=name+","+age+","+star+"\n"
-file.write(str(newRecord))
+file = open("Stars.csv","a") #추가형식으로 파일을 연다.
+name=input("enter name:") #이름을 입력받음
+age=input("enter age:")  #나이를 입력받음
+star=input("enter star sign:")  #별의 별명을 입력받음
+newRecord=name+","+age+","+star+"\n" #입력받은 데이터를 먼저 입력했던 방식대로 출력
+file.write(str(newRecord)) #문장을 입력하므로->str로 묶어둘 것
 file.close()
 
-file=open("Stars.csv","r")
-for row in file:
+file=open("Stars.csv","r")#읽기형식으로 파일을 연다
+for row in file:#줄마다 출력
     print(row)
 
 
-file = open("Stars.csv","r")
-reader = csv.reader(file)
+file = open("Stars.csv","r")#읽기형식으로 파일을 연다
+reader = csv.reader(file) #파일을 여는 방식 #2
 rows = list(reader)
-print(rows[1])
+print(rows[1])#두번째 열에있는 파일을 연다.
 
 file = open("Stars.csv","r")
 search = input("enter the data you are searching for: ")
 for row in file:
     if search in str(row):
-        print(row)
+        print(row)#원하는 영역의 라인을 출력
