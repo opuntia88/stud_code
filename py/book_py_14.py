@@ -27,8 +27,8 @@ for row in file:#줄마다 출력
 
 
 file = open("Stars.csv","r")#읽기형식으로 파일을 연다
-reader = csv.reader(file) #파일을 여는 방식 #2
-rows = list(reader)
+reader = csv.reader(file) #파일을 여는 방식 #2 해당파일을 읽어서 reader이라는 이름의 연속성을 띈 데이터변수 생성
+rows = list(reader)#rows라는 이름의 리스트 변수를 생성
 print(rows[1])#두번째 열에있는 파일을 연다.
 
 file = open("Stars.csv","r")
@@ -36,3 +36,23 @@ search = input("enter the data you are searching for: ")
 for row in file:
     if search in str(row):
         print(row)#원하는 영역의 라인을 출력
+
+import csv#csv파일은 변경할 수 없고 추가만 가능하다
+         #만일 변경을 원할경우 임시리스트를 작성해야한다. 
+file = list(csv.reader(open("Stars.csv")))#원본 csv파일을 읽어 리스트같이 변경가능한 형태로 사용하거나 변경가능하게끔 할 수 있다.
+tmp=[]#이것을 tmp라는 이름의 리스트에 적용
+for row in file:
+    tmp.append(row)#한 줄에 읽은 데이터를 추가한다.
+
+file = open("NewStars.csv","w")
+x=0#0을 값으로 가지는 변수 설정
+for row in tmp:#위에서 변경가능한 리스트로 저장한 것을
+    newRec = tmp[x][0] + ","+tmp[x][1]+","+tmp[x][2]+"\n"#별의 이름과 등등을 결합하는 것, 위의 문장만들기와 유사
+    file.write(newRec)
+    x=x+1
+file.close()
+
+file = open("NewStars.csv","r")
+for row in file:
+    print(row)
+file.close()
