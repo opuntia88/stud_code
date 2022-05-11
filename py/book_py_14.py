@@ -38,7 +38,7 @@ for row in file:
         print(row)#원하는 영역의 라인을 출력
 
 import csv#csv파일은 변경할 수 없고 추가만 가능하다
-         #만일 변경을 원할경우 임시리스트를 작성해야한다. 
+         #만일 변경을 원할경우 임시리스트를 작성해야한다. (변형+읽기)
 file = list(csv.reader(open("Stars.csv")))#원본 csv파일을 읽어 리스트같이 변경가능한 형태로 사용하거나 변경가능하게끔 할 수 있다.
 tmp=[]#이것을 tmp라는 이름의 리스트에 적용
 for row in file:
