@@ -18,14 +18,15 @@ for row in file:
 file.close()
 
 #112.위의 프로그램을 사용자에게 다른 내용의 이름을 요청해 각 행의 한줄에 하나씩 출력.
-file=list(csv.reader(open("Books.csv")))
-bk=[]
-for row in file:
-    bk.append(row)
-file=open("Book.csv","w")
-c=0
+#file=list(csv.reader(open("Books.csv")))
+#bk=[]
+#for row in file:
+#    bk.append(row)
+#file=open("Book.csv","w")
+c=1
 for row in bk:
-    l2=bk[c][0]+"|"+bk[c][1]+"|"+bk[c][2]+"|"+('*'*c)+"\n"
+    inp=input("enter the another signal:") 
+    l2=bk[c][0]+"|"+bk[c][1]+"|"+bk[c][2]+"|"+inp+"\n"
     file.write(l2)
     c=c+1
 file.close()
