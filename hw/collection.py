@@ -1,3 +1,4 @@
+#네개의 tv프로그램 타이틀의 리스트를 생성, 한줄씩 출력. 그러고 새로운 프로그램을 입력받아 원하는 위치에 넣고 재출력한다
 prog=["runningman","muhandojeon","sininwang","inthesoop"]
 for i in range(0,4):
     print(prog[i])
