@@ -14,7 +14,7 @@ file.close()
 
 file=open("Books.csv","r")#파일을 읽기형식으로 연다.
 for row in file:
-    print(row)#한 줄씩 출력.
+    print(row)#한 줄씩 출력.q
 file.close()
 
 #112.위의 프로그램을 사용자에게 다른 내용의 이름을 요청해 각 행의 한줄에 하나씩 출력.
